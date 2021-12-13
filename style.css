@@ -1,0 +1,56 @@
+.main-head,
+.grid-outer-item {
+  justify-content: center;
+  align-items: center;
+}
+
+.main-head {
+  height: 100vh;
+}
+.flex-item {
+  display: flex;
+}
+.grid-game {
+  flex-wrap: wrap;
+  height: 300px;
+  width: 400px;
+}
+
+.game-item {
+  height: 500px;
+  width: 500px;
+  padding: 8px;
+  border: 5px solid black;
+  background-color: rgb(224, 212, 34);
+}
+
+.series {
+  border: 1px solid black;
+  text-align: center;
+  width: 200px;
+}
+.game-timer {
+  margin: 0.4rem;
+}
+
+.bottom-item {
+  justify-content: space-around;
+  padding: 10px;
+}
+.btn {
+  cursor: pointer;
+  display: block;
+  border: 1px solid gray;
+  margin: 5px;
+  width: 100px;
+}
+
+.right-item :hover {
+  background-color: rgb(148, 130, 130);
+}
+
+.frontImg {
+  width: 62.5px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+}

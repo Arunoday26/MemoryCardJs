@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="main-head flex-item">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="memoryCard.js"></script>
+</head>
+
+<body>
+    <div class=".main-body">
+        <div id="game" class="game-item" name="game">
+            <h3>Score:<span id="result" name="result">0</span></h3>
+            <input type="number" value="60" max="60" min="0" id="timer" name="timer" class="game-timer"
+                data-target="60" />
+            <div id="grid_outer" name="grid_outer" class="grid-outer-item flex-item">
+                <div id="grid" name="grid" class="grid-game flex-item">
+                </div>
+            </div>
+            <div id="bottom" name="bottom" class="bottom-item flex-item">
+                <div id="left" name="left">
+                    <div class="series">
+                        <input type="radio" id="series2" name="series2" value="2" onclick="checkedSeriesTwo()">
+                        <label for="series2">series of 2 pics</label>
+                    </div>
+
+                    <div class="series">
+                        <input type="radio" id="series3" name="series3" value="3" onclick="checkedSeriesThree()">
+                        <label for="series3">series of 3 pics</label>
+                    </div>
+
+                    <div class="series">
+                        <input type="radio" id="series4" name="series4" value="4" onclick="checkedSeriesFour()">
+                        <label for="series4">series of 4 pics</label>
+                    </div>
+
+                </div>
+                <div id="right" name="right" class="right-item">
+                    <button type="button" value="button" id="new_game" name="new_game" class="btn">NEW GAME</button>
+                    <button type="button" id="show" name="show" class="btn">SHOW</button>
+                    <button id="help" name="help" type="button" class="btn" onclick="help()">HELP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
