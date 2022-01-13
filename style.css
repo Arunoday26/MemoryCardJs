@@ -9,24 +9,24 @@
   box-sizing: inherit;
 }
 
-.main-container,
+.main-body,
 .label-one,
 .label-two,
 .label-three,
-.for-button {
+.right-button {
   position: relative;
 }
 
-.main-container,
+.main-body,
 .container,
 .game,
 .content,
-.for-button,
+.right-button,
 .main-content {
   display: flex;
 }
 
-.main-container {
+.main-body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   top: 3rem;
@@ -156,7 +156,7 @@
   border: 1px solid #bfbfbf;
 }
 
-.container-two {
+.series {
   border-bottom: 2px solid #bfbfbf;
   padding: 0;
   display: inline-flex;
@@ -180,7 +180,7 @@
   left: 0.7rem;
 }
 
-.for-button {
+.right-button {
   left: 28%;
   width: 40%;
   height: 7rem;
