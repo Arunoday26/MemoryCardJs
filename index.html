@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" class="main-head flex-item">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="memoryCard.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class=".main-body">
-        <div id="game" class="game-item" name="game">
-            <h3>Score:<span id="result" name="result">0</span></h3>
-            <input type="number" value="60" max="60" min="0" id="timer" name="timer" class="game-timer"
-                data-target="60" />
-            <div id="grid_outer" name="grid_outer" class="grid-outer-item flex-item">
-                <div id="grid" name="grid" class="grid-game flex-item">
+    <div class="main-container">
+        <div class="container">
+            <section class="score-panel">
+                <div class="timer-container">
+                    <span class="timer"> Timer: 00:00</span>
                 </div>
-            </div>
-            <div id="bottom" name="bottom" class="bottom-item flex-item">
-                <div id="left" name="left">
-                    <div class="series">
-                        <input type="radio" id="series2" name="series2" value="2" onclick="checkedSeriesTwo()">
-                        <label for="series2">series of 2 pics</label>
+            </section>
+            <ul class="game ul"></ul>
+            <div class="main-content">
+                <div class="content">
+                    <div class="container-two">
+                        <input type="radio" name="radio_one" class="radio-one" id="radio_one" onclick="TwoCard()" />
+                        <label id="label_first" class="label-one" for="radio_one" onclick="TwoCard()">series of 2
+                            pics</label>
                     </div>
-
-                    <div class="series">
-                        <input type="radio" id="series3" name="series3" value="3" onclick="checkedSeriesThree()">
-                        <label for="series3">series of 3 pics</label>
+                    <div class="container-two">
+                        <input class="radio-two" name="radio_two" type="radio" id="radio_two" onclick="ThreeCard()" />
+                        <label id="label_second" class="label-two" for="radio_two" onclick="ThreeCard()">series of 3
+                            pics</label>
                     </div>
-
-                    <div class="series">
-                        <input type="radio" id="series4" name="series4" value="4" onclick="checkedSeriesFour()">
-                        <label for="series4">series of 4 pics</label>
+                    <div class="container-two">
+                        <input type="radio" name="radio_three" class="radio-three" id="radio_three"
+                            onclick="FourCard()" />
+                        <label id="label_third" class="label-three" for="radio_three" onclick="FourCard()">series of 4
+                            pics</label>
                     </div>
-
                 </div>
-                <div id="right" name="right" class="right-item">
-                    <button type="button" value="button" id="new_game" name="new_game" class="btn">NEW GAME</button>
-                    <button type="button" id="show" name="show" class="btn">SHOW</button>
-                    <button id="help" name="help" type="button" class="btn" onclick="help()">HELP</button>
+                <div class="for-button">
+                    <button type="reset" id="reset" name="reset" class="btn reset-btn">New Game</button>
+                    <button type="button" id="show" name="show" class="btn show-btn">Show</button>
+                    <button type="button" id="help" name="help" class="btn help-btn">Help</button>
                 </div>
             </div>
         </div>
     </div>
+    <!--- ==============================JAVA SCRIPT===================================-->
+    <script src="memoryCard.js"></script>
 </body>
 
 </html>
